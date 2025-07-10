@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "Metastasis2" `
+  -ModName "MINERVA: Metastasis 2" `
+  -ModFolder "metastasis" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/metastasis2/Metastasis-2-Original.zip" `
+  -ModBaseFilesUrlHash "396858c8642d48c303fe5e369f2b7773c30e994ccca0b7402b6f17101b20913d" `
+  -ModReadmePath "README.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
